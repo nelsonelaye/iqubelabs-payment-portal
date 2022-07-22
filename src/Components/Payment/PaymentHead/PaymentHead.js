@@ -76,21 +76,21 @@ const NavigationLink = styled(NavLink)`
   color: var(--grey);
   position: relative;
 
-  
-
   &.active {
     color: var(--orange);
+    position: relative;
 
-    ::before{
-        content: "Hello",
-        position: absolute;
-        bottom: 10;
-   
-        width: 100px;
-        height: 5px;
-        background-color: var(--orange);
-    }
-    
+    // &:after {
+    //   content: "";
+    //   // position: absolute;
+    //   // bottom: 5;
+    //   // margin-top: 40px;
+    //   // z-index: 10;
+
+    //   padding: 0 60px;
+    //   border-radius: 20px;
+    //   background-color: red;
+    // }
   }
 `;
 const Navigator = styled.div``;
@@ -111,6 +111,18 @@ const Nav = styled.div`
   text-transform: capitalize;
   margin-right: 50px;
   //   padding-bottom: 20px;
+  position: relative;
+
+
+  // &:after {
+  //   content: "Hello";
+  //       position: absolute;
+    //     top:0;
+    // z-index:10;
+    //     width: 100px;
+    //     height: 10px;
+    //     background-color: red;
+  }
 
   @media screen and (max-width: 425px) {
     font-size: 12px;
