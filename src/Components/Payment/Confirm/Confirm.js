@@ -37,7 +37,10 @@ const Confirm = () => {
         <Link to="/complete" style={{ textDecoration: "none" }}>
           <Button>Pay</Button>
         </Link>
-        <Cancel>Cencel Payment</Cancel>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          {" "}
+          <Cancel>Cancel Payment</Cancel>
+        </Link>
       </ButtonHold>
     </Container>
   );

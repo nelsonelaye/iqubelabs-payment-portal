@@ -46,7 +46,10 @@ const PersonalInfo = () => {
           <Link to="/billing" style={{ textDecoration: "none" }}>
             <Button>Next</Button>
           </Link>
-          <Cancel>Cencel Payment</Cancel>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            {" "}
+            <Cancel>Cancel Payment</Cancel>
+          </Link>
         </ButtonHold>
       </Form>
     </Container>

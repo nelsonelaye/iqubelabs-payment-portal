@@ -12,7 +12,7 @@ const PaymentHead = () => {
 
         <Navigator>
           <NavHold>
-            <NavigationLink to="/personal">
+            <NavigationLink to="/">
               {" "}
               <Nav>Personal info</Nav>
             </NavigationLink>
@@ -80,17 +80,15 @@ const NavigationLink = styled(NavLink)`
     color: var(--orange);
     position: relative;
 
-    // &:after {
-    //   content: "";
-    //   // position: absolute;
-    //   // bottom: 5;
-    //   // margin-top: 40px;
-    //   // z-index: 10;
-
-    //   padding: 0 60px;
-    //   border-radius: 20px;
-    //   background-color: red;
-    // }
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      top: 50px;
+      padding: 10px 60px;
+      border-radius: 20px;
+      background-color: var(--orange);
+    }
   }
 `;
 const Navigator = styled.div``;
@@ -99,18 +97,14 @@ const NavHold = styled.div`
   display: flex;
   align-items: center;
   flex-direction: row;
-  margin-bottom: 30px;
-
-  @media screen and (max-width: 425px) {
-    margin-bottom: 20px;
-  }
+  // margin-bottom: 30px;
 `;
 const Nav = styled.div`
   font-size: 23px;
   font-weight: 650;
   text-transform: capitalize;
   margin-right: 50px;
-  //   padding-bottom: 20px;
+    padding-bottom: 30px;
   position: relative;
 
 
@@ -127,6 +121,7 @@ const Nav = styled.div`
   @media screen and (max-width: 425px) {
     font-size: 12px;
     margin-right: 10px;
+    padding-bottom: 20px;
   }
 `;
 const Line = styled.div`

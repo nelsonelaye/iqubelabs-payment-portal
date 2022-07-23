@@ -15,7 +15,7 @@ const Complete = () => {
             Please check your mail for details concerning this transaction.
           </Text>
 
-          <Link to="/personal" style={{ textDecoration: "none" }}>
+          <Link to="/" style={{ textDecoration: "none" }}>
             <Action>Return Home</Action>
           </Link>
         </Hold>
